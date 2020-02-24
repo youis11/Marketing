@@ -202,27 +202,27 @@ div.caption span.border {
   letter-spacing: 10px;
 }
 
-  section div.gallery{
-    width:640px;
-    height:400px;
-    position: relative;
-    left:50%;
-    transform:translate(-50%);
-    background-image:url('images/Foto1.jpg');
-    background-size: 640px 400px;
-    background-repeat: no-repeat;
-    box-shadow: 1px 2px 10px 5px white;
-    animation: slider 14s infinite linear;
-  } 
+section div.gallery{
+  width:640px;
+  height:400px;
+  position: relative;
+  left:50%;
+  transform:translate(-50%);
+  background-image:url('images/Foto1.jpg');
+  background-size: 640px 400px;
+  background-repeat: no-repeat;
+  box-shadow: 1px 2px 10px 5px white;
+  animation: slider 14s infinite linear;
+} 
 
-  @keyframes slider{
-    0%{ background-image:url('images/Foto1.jpg');
-    }
-    33%{ background-image: url('images/Foto2.jpg');
-    }
-    66%{ background-image: url('images/Foto3.jpg');
-    }
+@keyframes slider{
+  0%{ background-image:url('images/Foto1.jpg');
   }
+  33%{ background-image: url('images/Foto2.jpg');
+  }
+  66%{ background-image: url('images/Foto3.jpg');
+  }
+}
 
 section div.trailer {
 	position: relative;
@@ -241,17 +241,17 @@ section div.trailer iframe {
 
   
 
-  section.trailer{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -27px;
-    background: rgb(204, 100, 59);
-    color:blue;
-  }
+section.trailer{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: -27px;
+  background: rgb(204, 100, 59);
+  color:blue;
+}
 
-  section.trailer h2{
-    color: whitesmoke;
-    font-size: xx-large;
-  }
+section.trailer h2{
+  color: whitesmoke;
+  font-size: xx-large;
+}
 
 section.game_description,section.team{
   background: rgb(212, 76, 22);
