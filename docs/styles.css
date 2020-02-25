@@ -17,22 +17,22 @@
   
   header.scroll_navbar{
     background-color: rgb(187, 12, 12);
-    padding: 20px;
+    padding: 20px,0px;
     text-align: center;
     position:sticky;
-    top:0;
+    top:20;
     z-index:1;
     height: 50px;
   }
 
-  header {
+   header {
     background-color: rgb(187, 12, 12);
     height: 120px;
-    padding: 20px;
+    padding: 20px,0px;
     text-align: center;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 20;
     z-index: 9;
   }
 
@@ -60,7 +60,7 @@
     text-decoration: underline;
   }
   
-  header.scroll_navbar .logo a{
+   header.scroll_navbar .logo a{
     background-image: url("Rockstar_Games_Logo.png");
     background-size: 100px;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@
     text-indent: -9999999px;
     top: -40px;
     width: 100px;
-  }
+  } 
 
   nav ul {
     margin: 0;
