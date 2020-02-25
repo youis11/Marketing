@@ -80,7 +80,7 @@
     height: 100px;
     position: relative;
     text-indent: -9999999px;
-    top: -40px;
+    top: -25px;
     width: 100px;
   } 
 
@@ -352,6 +352,17 @@ section ul.list-releases li a, section div div a.download_link{
 }
 section div div a.download_link{
   margin: 20px;
+}
+
+a.download_link{
+  text-decoration: none;
+  background: red;
+  color: white;
+  padding: 3px 10px;
+  font-size: 40px;
+  line-height: 2;
+  border-radius: 4px;
+  float: center !important;
 }
 
 /* FEATURES */
