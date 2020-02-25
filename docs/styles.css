@@ -1,7 +1,11 @@
-  body {
+  body, html {
     background: rgb(218, 234, 253);
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
   }
 
   section{
@@ -102,7 +106,7 @@
     header .desktop{
       display: none;
     }
-    
+
     div.bgimg-1 div.caption img 
     {
       width: 256px;
@@ -171,12 +175,7 @@
 
   /* SECTION*/
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
+
 
 section h2{
     color:rgb(228, 123, 4);
