@@ -16,7 +16,7 @@
   /* HEADER */
   
   header.scroll_navbar{
-    background-color: rgb(187, 12, 12);
+    background-color: white;
     padding: 20px,0px;
     text-align: center;
     position:sticky;
@@ -26,7 +26,7 @@
   }
 
    header {
-    background-color: rgb(187, 12, 12);
+    background-color: white;
     height: 120px;
     padding: 20px,0px;
     text-align: center;
@@ -37,7 +37,7 @@
   }
 
   header.scroll_navbar a{
-    color: white;
+    color: grey;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -47,7 +47,7 @@
   }
 
   header a {
-    color: white;
+    color: grey;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -120,7 +120,7 @@
   /* FOOTER */
   
   footer {
-    background-color: rgb(187, 12, 12);
+    background-color: white;
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 16px;
