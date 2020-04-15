@@ -461,7 +461,7 @@ section.team img {
 .background{
   background-color: rgba(0, 0, 0, 0.8);
   width:100%;
-  height: 320%;
+  height: 200%;
   position: absolute;
   top: 0;
   left: 0;
@@ -688,4 +688,49 @@ input#i3:checked ~ .nav #dot3{
 section.work video{
   display: block;
   margin:auto;
+}
+
+/* PODCAST */
+
+section figure.podcast
+{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgb(4, 0, 59);
+  padding: 5px;
+  background-color: rgba(82, 82, 255, 0.2);
+}
+
+section figure.podcast figcaption.podcast_caption
+{
+  margin-right: 20px;
+  font-size: larger;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+section figure.podcast figcaption.podcast_caption p.authors
+{
+  margin-right: 20px;
+  margin-top: 0px;
+  font-size: small;
+  color: grey;
+}
+
+section figure.podcast p
+{
+  margin-right: 25px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+}
+
+#modal1:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal1:target .popup{
+    opacity: 1;
+    visibility: visible;
 }
