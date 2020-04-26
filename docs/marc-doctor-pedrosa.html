@@ -1,183 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Final Fantasy Mystery World</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png">
+<head itemscope itemtype="http://schema.org/Organization">
+    <title>RockstarGames</title>
+    <link rel="stylesheet" href="http://citmalumnes.upc.es/~lluismf3/website/styles.css">
+    <link rel="icon" href="logo.png" itemprop="image">
 </head>
-<header>
-    <nav>
-        <ul>
-            <li><a href="team.html">About Us</a></li>
-            <li class="mobile"><a href="download.html">Download</a></li>
-            <li class="logo"><a href="index.html">PolarPath Logo</a></li>
-            <li class="desktop"><a href="download.html">Download</a></li>
-        </ul>
-    </nav>
-</header>
+
+    <header>
+        <nav>
+            <ul itemscope itemtype="http://schema.org/Organization">
+                <li><a href="team.html" itemprop="members">About Us</a></li>                
+                <li class="mobile"><a href="download.html" itemprop="url">Download</a></li>
+                <li class="logo"><a href="index.html" itemprop="url">RockstarGames Logo</a></li>
+                <li class="desktop"><a href="download.html" itemprop="url">Download</a></li>
+            </ul>
+        </nav>
+    </header>
 <header class="scroll_navbar">
 <nav>
-    <ul>
-        <li><a href="team.html">About Us</a></li>                
-        <li class="mobile"><a href="download.html">Download</a></li>
-        <li class="logo"><a href="index.html">PolarPath Logo</a></li>
-        <li class="desktop"><a href="download.html">Download</a></li>
+        <ul itemscope itemtype="http://schema.org/Organization">
+        <li><a href="team.html" itemprop="members">About Us</a></li>       
+        <li class="mobile"><a href="http://citmalumnes.upc.es/~lluismf3/website/download.html" itemprop="url">Download</a></li>
+        <li class="logo"><a href="http://citmalumnes.upc.es/~lluismf3/website/index.html" itemprop="url">PolarPath Logo</a></li>
+        <li class="desktop"><a href="http://citmalumnes.upc.es/~lluismf3/website/download.html" itemprop="url">Download</a></li>
     </ul>
 </nav>
 </header>
-<section class="member">
-    <h1>Christian Martínez de la Rosa</h1>
-    <img src="members/DOCTOR_wapo.jpg" alt="Christian Martínez de la Rosa">
+<section class="member" itemscope itemtype="http://schema.org/Persona">
+    <h1>Marc Doctor Pedrosa</h1>
+    <img src="http://citmalumnes.upc.es/~lluismf3/website/members/DOCTOR_wapo.jpg" alt="Marc Doctor Pedrosa"  itemprop="image">
     <div class="container_member">
         <ul>
-            <li>
-                Role: Leader
+            <li itemprop="knowsAbout">
+                Role: Level Design
             </li>
             <li>
                 Age: 20 y.o.
             </li>
-            <li>
-                From: Begues
+            <li itemprop="homeLocation">
+                From: Ripollet
             </li>
             <li>
-                Github: <a class="github" href="https://github.com/christt105">christt105</a>
+                Github: <a class="github" href="https://github.com/thedoctormarc" itemprop="contactPoint">thedoctormarc</a>
             </li>
         </ul>
     </div>
 </section>
 
-<section class="work">
+<section class="work" itemscope itemtype="http://schema.org/CreativeWork">
     <h2>My work</h2>
-    As a team lead, my work was to guide the team to the right direction and to keep the team together.
-    Also, inside the project, I have mainly worked in code, specifically in data structure and data management.
-    </br>
-    In general, I have had meetings with the <a href="lluis-moreu-farran.html">manager</a> in order to create the team meeting points, 
-    to know the deviation of the team and prevent possible risks.
-    </br>
-    </br>
-    As I said, I focused in code, now I will explain some features I have implemented.
-    <h3>UI System</h3>
-    I have implemented the base of the UI System. The system works with a list of UI elements and has implemented a BFS algorithm to go through it. To get the input, 
-    the game travel for the UI list from the childs to the parent, to paint the UI, it travels inversely. The system includes the base UI elements:
-    <img src="images/christian/pause_menu.png" alt="pause menu">
-    <h4>Image</h4>
-    Image UI is the simplest element. Is a section of the atlas UI texture and, also, can be a sequence of frames, creating an animation.
-    <h4>Button</h4>
-    The Button UI has integrated three main states: idle, on hover and click. Moreover, it has a system of listeners to set logic when button is pressed. In addition, I
-    have created the logic of focus to move between buttons.
-    <img src="images/christian/Button.gif" alt="button gif">
-    <h4>Label</h4>
-    The Label element is a little more complex. First, it has basic parameters like text, color and font, and automatically the program calculates the size it occupies on the screen. 
-    In addition, it has a warp parameter that will cut the phrases to fit in the warp zone. Also, it has the possibility to set a background. You can choose a color and an
-    alpha value and the program will paint the background behind the label, it is useful in cases that you need readability.
-    <h3>Font System</h3>
-    In relation with the UI System, I have created a system to load fonts. We had the problem that for every label we created, a font was opened, so if we created 10 labels with the 
-    same font and size, the program will open 10 equal fonts. In order to solve that, I have created a system that only open a font if there is not any equal opened before. To make
-    it more readability, I had set a few fonts with default sizes we will use in a xml file. Every time that a label is created, it will find if there is a font with that
-    characteristics and if it exist, will return that font pointer. Font can be searched by name(string) or by id(enum) we have declared.
-    <img src="images/christian/fonts.png" alt="fonts">
-    <h3>Properties</h3>
-    In order to save important data from some things, like entities, map, etc. I have created a class that can save information and is self-administered. It consist in two templates classes, 
-    the first one contain the name of the property and the value. The second one, contains a list of properties and some methods to organize the properties. The methods are to create
-    a property and added to the list, get the value of the property by the name and can  pass a default value if the property with that name is not found. Other methods are thinked to 
-    given a name it returns if a property exists with the same name and false if not, the last method cleans the property list. 
-    You can find the file <a href="https://github.com/polarpathgames/Final-Fantasy-Mystery-World/blob/master/Final_Fantasy_Mystery_World/Final_Fantasy_Mystery_World/p2Properties.h">here</a>.
-    <h3>Load Entities From Tiled</h3>
-    Creating the information of all entities is a heavy and slowly task. In order to speed up the mechanism I have created a system that loads entity data from a xml file. In this case,
-    I have used <a href="https://www.mapeditor.org/">Tiled</a>, a map editor, to work comfortably. The latest versions of Tiled allows to work with tilesets and has some interesting 
-    functionalities. This is an example of what a spritesheet is seen in Tiled and the exportation in a .tsx file, that has the same behavior that a .xml version.
-    <img src="images/christian/tsx.png" width="1500" alt="a tsx file seen in Tiled and raw">
-    Here we have some basi data like tile size, number of tiles, the path of the image and custom properties that will be loaded with the Properties class mentioned before. Also,
-    every tile has more space to set more data. Here we can see an example:
-    <img src="images/christian/tile_info.png" alt="basic info of one tile in the spritesheet">
-    Each tile has an ID number and a type. Also has properties and can hold an animation. In our case we have set a type number equals to the id enum of our animation states, so when
-    we load the entity, the animations are setted automatically. In addition, each tile that has an animation attached, has a property to set the animation speed.
-    <h3>Research</h3>
-    In the project 2 subject, every student has to do a research on a topic. I choose Sprite Ordering and Camera Culling to do a research of it. You can find full information of the project
-    <a href="https://christt105.github.io/Sprite_Ordering_and_Camera_Culling_Personal_Research/">here</a>. I recommend seeing that project that contains much  more information of that 
-    topics that this web page.
-    <h4>Sprite Ordering</h4>
-    In summary, the system works with entities and order the vector by the Y position on the screen. In order to make a good logic of sprite ordering, the system works with a pivot that you
-    can set where you want. Also, that pivot can be setted in Tiled, you only have to put a quad with the name "pivot" in the first tile and the program will set it directly.
-    <img src="images/christian/sprite_ordering.gif" alt="sprite ordering">
-    <h4>Camera Culling</h4>
-    In relation to the previous topic, sorting a vector is very expensive. In order to optimize sorting and bliting I have applied a camera culling. That system checks if a entity or a tile
-    is between camera edges. We use this in the draw map and in entities, only tiles in camera will blit and only entities in camera will be sorted and blitted. All this explication 
-    is explained with more detail in the research web page, with examples and profiling tests.
-    <h3>Static Entities</h3>
-    There were a problem with map objects and sprite ordering. Our map is loaded by tiles and can not be sorted with entities. So, I have to implement a technique to create map objects in 
-    Tiled that will oper like entities that will make nothing. In order to do that, you can create rectangles as a objects in Tiled and assign a name and a type, so if you want to create,
-    for example a tree, you must put as type the "static" word, and in name "tree". Later, in the static entity class you have to put an "if" comparing the name with "tree" and set all its 
-    information. The system allows to create objects with animation, particles and interaction with its logic behind.
-    <img src="images/christian/static_entity1.png" alt="static entity1"><img src="images/christian/static_entity2.png" alt="static entity2"><img src="images/christian/static_entity3.gif" alt="static entity3">
-    <h3>Texture Manager</h3>
-    Loading a lot of textures makes the program to run slowly and fill the memory considerably. The first problem we had, was that every entity loaded a texture, in cases that we had same
-    enemies or more than one static entities, we had seen that they could use only one texture and share with the entities that had the same texture. What have I done was creating a number 
-    attached to every texture that measures the number of objects that need that texture. If a texture is loaded, program will search if exist a texture with that path, if succeed, will
-    return the pointer of that texture and add one to the dependence texture, if not succeed will load a new texture with dependence 0. When a texture is deleted, will check if the dependence
-    is 0, if not, won't delete the texture and subtracts one to the dependence number.
-    <h3>On Collision System</h3>
-    I created a three different types of collision: OnCollisionEnter, OnCollisionStay and OnCollisionLeave. That differentation helps to only do logic when enter in a trigger, leave or
-    keeps colliding.
-    <h3>Memory Leaks</h3>
-    In order to avoid memory leaks I just used Visual Studio facilities in <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/finding-memory-leaks-using-the-crt-library?view=vs-2015">this</a> 
-    guide to know memory leaks and solve them.
-    <h3>Particle System</h3>
-    To create a better expierence I implemented a particle system. I start from an other student research you can find 
-    <a href="https://github.com/elliotjb/Particle-System-by-ElliotJB">here</a>. I modified a little that system. Also, I created all particles found in the game.
-    <img src="images/christian/fountain_particles.gif" alt="particles fountain"><img src="images/christian/flash_particles.gif" alt="particles flash">
-    <h3>Debug Screen</h3>
-    In order to know some basic game info without stopping the game using breakpoints or creating logs, I created a Debug Screen.
-    <img src="images/christian/debug_screen.png" alt="debug screen">
-    As we can see, there is some basic info. First we can see fps and delta time. Also, displays the camera position. In other rectangle appears the number of textures used in the main scene.
-    In the map info. It appears the number of layers that contains the map, number of tilesets, an identificator of map type, size and tiles are rendering with the camera culling.
-
-    In entities info we can the number of entities(including the static entities) and the entities drawn. Also appears the info of the player. <br>In addition, it shows the 
-    mouse position and ui selected
-    <h3>Math helper</h3>
-    To help in some operations I created some functions to do it. Mainly, it contains basic interpolation functions to move objects using lerp. Other function is to make conversion factors
-    of angles.
-    <h3>Improve Cutscene Manager</h3>
-    Once one member implemented Cutscene Manager from other student that you can find <a href="https://alexmg99.github.io/Cutscene-Manager-Research/">here</a>, I improved some things in
-    order to speed up the work of creating cutscenes. First I modified the camera event to set the initial position, last position and the speed and the program will move the camera with
-    a lerp. I also implement a feature in xml file that if you don't put any initial position, te program will set the position the camera was before. If you don't set any destination, the 
-    camera will move to the center of the player. In other cases, I have implemented a direction of start and end of an entity, because before only can change the direction moving the entity.
-    <h3>NPC System</h3>
-    To create Npcs easily I have created a system that loads npcs info from a xml file. It allows some data given by different forms. Can set graphics by tsx as entities or manually setting
-    the frames and animations. Also, you can set a route that will follow. Also allows some dialog trees to use in the dialog system created by 
-    <a href="https://roperoivan.github.io/Dialogue-System/">Iván Ropero</a>.
-    <h3>State System</h3>
-    We have a mechanic of poisoned, burned and there is a blizzard. To make it easy, that works as entities attached to other entities to make it damage. Also, some of them have particles. All 
-    of them are entities because the game is turn-based and the events have to make something in every some turns.
-    <img src="images/christian/poison_state.gif" alt="poison state"> <img src="images/christian/blizzard_state.gif" alt="blizzard event">
-    <h3>Boss Quest 2: Ice Queen</h3>
-    <img src="images/christian/Ice_queen_idle.gif" alt="ice queen idle">
-    I made the second boss that is located in the second quest. Before doing that, I improved the enemies logic. The Ice Queen has two different phases. The first one, attacks from far and
-    when you approach her and do her some damage, she teleports to other destination.
-    <img src="images/christian/ice_queen_range.gif" alt="superpower"><img src="images/christian/ice_queen_basic.gif" alt="basic">
-    <img src="images/christian/ice_queen_flash.gif" alt="flash">
-    When she is half or fewer of life, starts the second phase. In that phase, she teleports frequently and
-    invokes two slimes that hit you. Also, invokes a blizzard permanently.
-    <img src="images/christian/ice_queen_blizzard.gif" alt="blizzard">
-    <h3>Rupees Spawn</h3>
-    There is some chests that when you open there create a lot of rupees that expands throughout the room. The system allows a percentatge of every rupee, the distance where can land and 
-    the number of rupees to create. The system will find the free tiles to throw the rupees.
-    <img src="images/christian/rupees.gif" alt="rupees explosion">
-    <h3>Abilities visual rework</h3>
-    In order to improve the game feel, we decided to make more visual the abilities. I just set an ilumination tile, made by the 
-    <a href="https://polarpathgames.github.io/Final-Fantasy-Mystery-World/marc-galvez-llorens.html">designer</a>, where the ability will affect.
-    <img src="images/christian/ability1_warrior.gif"><img src="images/christian/ability1_mage.gif"><img src="images/christian/ability1_archer.gif">
-    <img src="images/christian/flash.gif">
-    <h3>Installer</h3>
-    I have made the installer project following the research from other student, <a href="https://carlosupc.github.io/Installer-Research/">Carlos Peña</a>.
-    <img src="images/christian/installer.png" alt="installer">
-    
+    My work excels that of a human. It is beyond your comprehension. 
 </section>
+    
+<section class="awards" itemscope itemtype="http://schema.org/AchieveAction">
+    <h2>Awards</h2>
+    I received the Best Award Ever Hands Down (BAEHD) for being able to exist in this desolate world while being able to walk in the street, simultaneously (prior to the virus).
+</section>
+    
 <footer>
-    <ul>
-        <li class="github"><a href="https://github.com/polarpathgames/Final-Fantasy-Mystery-World">Github Logo</a></li>
-        <li class="twitter"><a href="https://twitter.com/polarpathgames">Twitter Logo</a></li>
-        <li class="mail"><p>polarpathgames@gmail.com</p> </li>
+    <ul itemscope itemtype="http://schema.org/Organization">
+        <li class="github"><a href="https://github.com/polarpathgames/Final-Fantasy-Mystery-World" itemprop="url">Github Logo</a></li>
+        <li class="twitter"><a href="https://twitter.com/polarpathgames" itemprop="url">Twitter Logo</a></li>
+        <li class="mail" itemprop="email"><p>polarpathgames@gmail.com</p> </li>
     </ul>
 </footer>
 </html>

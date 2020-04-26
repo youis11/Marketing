@@ -741,12 +741,12 @@ section a figure.podcast p
   color: white;
 }
 
-#modal1:target{
+#modal1:target, #modal2:target{
     opacity: 1;
     visibility: visible;
 }
 
-#modal1:target .popup{
+#modal1:target .popup, #modal2:target .popup{
     opacity: 1;
     visibility: visible;
 }

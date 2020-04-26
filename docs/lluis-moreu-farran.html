@@ -1,21 +1,21 @@
 <html>
-    <head>
-            <title>Rockstar Games</title>
+    <head itemscope itemtype="http://schema.org/Organization">
+            <title>Rockstar Games </title>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
            
         <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="Rockstar_Games_Logo_Orange.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" href="Rockstar_Games_Logo_Orange.png" itemprop="image">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" itemprop="url">
     </head>
 
     <header>
         <nav>
-            <ul>
-                <li><a href="team.html">About Us</a></li>                
-                <li class="mobile"><a href="download.html">Download</a></li>
-                <li class="logo"><a href="index.html">RockstarGames Logo</a></li>
-                <li class="desktop"><a href="download.html">Download</a></li>
+            <ul itemscope itemtype="http://schema.org/Organization">
+                <li><a href="team.html" itemprop="members">About Us</a></li>                
+                <li class="mobile"><a href="download.html" itemprop="url">Download</a></li>
+                <li class="logo"><a href="index.html" itemprop="url">RockstarGames Logo</a></li>
+                <li class="desktop"><a href="download.html" itemprop="url">Download</a></li>
             </ul>
         </nav>
     </header>
@@ -28,23 +28,23 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" itemscope itemtype="http://schema.org/SoftwareApplication">
                     <img class="d-block w-100" src="images/lluis/background-1.jpg" alt="First slide">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" itemprop="legalName">
                         <h3>Weep Engine</h3>
                         <p>OpenGl 3D Engine I programmed</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" itemscope itemtype="http://schema.org/Organization">
                     <img class="d-block w-100" src="images/lluis/background-2.jpg" alt="Second slide">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" itemprop="legalName">
                         <h3>Final Fantasy Mystery World</h3>
                         <p>A 8 people SDL Project I managed</p>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" itemscope itemtype="http://schema.org/VideoGame">
                     <img class="d-block w-100" src="images/lluis/background-3.jpg" alt="Third slide">
-                    <div class="carousel-caption">
+                    <div class="carousel-caption" itemprop="legalName">
                         <h3>The Discopub</h3>
                         <p>A Unity Project with our own IA</p>
                     </div>    
@@ -61,17 +61,17 @@
         </div>
 
               
-        <div class="jumbotron">
+        <div class="jumbotron" itemscope itemtype="http://schema.org/Person">
             <container style = "display: flex; flex-direction: row;">          
                 <div>
                 <h1 class="display-4">Who am I?</h1>  
-                <p class="lead">My name is <a href="https://es.linkedin.com/in/llu%C3%ADs-moreu-farran">Lluís Moreu</a>, </p>
+                <p class="lead">My name is <a href="https://es.linkedin.com/in/llu%C3%ADs-moreu-farran" itemprop="contactPoint">Lluís Moreu</a>, </p>
                 <hr class="my-4">
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <a class="btn btn-primary btn-lg" href="lluis-projects.html" role="button">My Projects</a>
+                <a class="btn btn-primary btn-lg" href="lluis-projects.html" role="button" itemprop="contactPoint">My Projects</a>
             </div>
             <container style="width: 50%;"></container>
-            <img src="members/LLUIS_wapo.jpg" class="img-rounded" alt="Cinque Terre" width=15%>
+            <img src="members/LLUIS_wapo.jpg" class="img-rounded" alt="Cinque Terre" width=15% itemprop="image">
             </container>
         </div>
 

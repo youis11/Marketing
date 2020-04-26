@@ -13,42 +13,43 @@
     
     <header>
         <nav>
-            <ul>
-                <li><a href="team.html">About Us</a></li>                
-                <li class="mobile"><a href="download.html">Download</a></li>
-                <li><a href="http://citmalumnes.upc.es/~marcgl4/presskit/">Press Kit</a></li>                
-                <li class="mobile"><a href="podcast.html">Podcast</a></li>
-                <li class="logo"><a href="index.html">RockstarGames Logo</a></li>
-                <li class="desktop"><a href="download.html">Download</a></li>
-                <li class="desktop"><a href="podcast.html">Podcast</a></li>
+            <ul itemscope itemtype="http://schema.org/Person">
+                <li><a href="team.html" itemprop="url">About Us</a></li>                
+                <li class="mobile"><a href="download.html" itemprop="url">Download</a></li>
+                <li><a href="http://citmalumnes.upc.es/~marcgl4/presskit/" itemprop="url">Press Kit</a></li>                
+                <li class="mobile"><a href="blog.html" itemprop="url">Blog</a></li>
+                <li class="logo"><a href="index.html" itemprop="url">RockstarGames Logo</a></li>
+                <li class="desktop"><a href="download.html" itemprop="url">Download</a></li>
+                <li class="desktop"><a href="blog.html" itemprop="url">Blog</a></li>
             </ul>
         </nav>
     </header>
 
     <header class="scroll_navbar">
         <nav>
-            <ul>
-                <li><a href="team.html">About Us</a></li>                
-                    <li class="mobile"><a href="download.html">Download</a></li>
-                    <li><a href="http://citmalumnes.upc.es/~marcgl4/presskit/">Press Kit</a></li>                
-                    <li class="mobile"><a href="podcast.html">Podcast</a></li>
-                    <li class="logo"><a href="index.html">RockstarGames Logo</a></li>
-                    <li class="desktop"><a href="download.html">Download</a></li>
-                    <li class="desktop"><a href="podcast.html">Podcast</a></li>
+            <ul itemscope itemtype="http://schema.org/SocialMediaPosting">
+                <li><a href="team.html" itemprop="url">About Us</a></li>                
+                    <li class="mobile"><a href="download.html" itemprop="url">Download</a></li>
+                    <li><a href="http://citmalumnes.upc.es/~marcgl4/presskit/" itemprop="url">Press Kit</a></li>                
+                    <li class="mobile"><a href="blog.html" itemprop="url">Blog</a></li>
+                    <li class="logo"><a href="index.html" itemprop="url">RockstarGames Logo</a></li>
+                    <li class="desktop"><a href="download.html" itemprop="url">Download</a></li>
+                    <li class="desktop"><a href="blog.html" itemprop="url">Blog</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section itemscope itemtype="http://schema.org/VideoGame">
+        <object style="display: block; margin-left: auto; margin-right: auto;" width="728" height="90" data="gdw/index.html"></object>
         <h1>Grand Theft Auto V</h1>
         <div class="gallery"></div>
     </section>
-    <section class="game_description">
+    <section class="game_description" itemscope itemtype="http://schema.org/VideoGame">
         <h2>What is the game about?</h2>
         <p>Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the first main entry in the Grand Theft Auto series since 2008's Grand Theft Auto IV. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three criminals and their efforts to commit heists while under pressure from a government agency and powerful crime figures. The open world design lets players freely roam San Andreas' open countryside and the fictional city of Los Santos, based on Los Angeles.</p>
-        <a href="landing.html" class="download_link">+ INFO</a>
+        <a href="landing.html" class="download_link" itemprop="downloadUrl">+ INFO</a>
     </section>
-    <section class="video_gallery">
+    <section class="video_gallery" itemscope itemtype="http://schema.org/VideoGameClip">
         <h2 class="video_title">Video gallery</h2>
         <div class="videos">
             <figure>
@@ -66,10 +67,10 @@
         </div>
     </section>
     <footer>
-        <ul>
-            <li class="facebook"><a href="https://www.facebook.com/rockstargames/">Facebook Logo</a></li>
-            <li class="twitter"><a href="https://twitter.com/RockstarGames">Twitter Logo</a></li>
-            <li class="instagram"><a href="https://www.instagram.com/rockstargames/">Instagram Logo</a></li>
+         <ul itemscope itemtype="http://schema.org/SocialMediaPosting">
+            <li class="facebook"><a href="https://www.facebook.com/rockstargames/" itemprop="url">Facebook Logo</a></li>
+            <li class="twitter"><a href="https://twitter.com/RockstarGames" itemprop="url">Twitter Logo</a></li>
+            <li class="instagram"><a href="https://www.instagram.com/rockstargames/" itemprop="url">Instagram Logo</a></li>
          </ul>
     </footer>
 </html>
